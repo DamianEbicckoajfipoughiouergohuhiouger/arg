@@ -41,5 +41,15 @@
     <footer>
       <p>&copy; 2023 Flumeston Forums. All rights reserved.</p>
     </footer>
+    <script>
+          // Function to display the confirmation dialog
+    function confirmLeave(event) {
+      event.preventDefault();
+      event.returnValue = '';
+    }
+  
+    // Attach the event listener to the 'beforeunload' event
+    window.addEventListener('beforeunload', confirmLeave);
+    </script>
   </body>
 </html>
