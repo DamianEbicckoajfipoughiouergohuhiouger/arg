@@ -90,25 +90,27 @@ margin-top: -35px;
     </style>
   </head>
 <body>
+  
   <header>
     <div class="logo">Google</div>
     <div class="header-right">
-      <button class="header-btn">Sign In</button>
-      <button class="header-btn">Apps</button>
-      <button class="header-btn">Google Drive</button>
-      <button class="header-btn">More</button>
+      <button class="header-btn" onclick="window.location.href='error.html'">Sign In</button>
+      <button class="header-btn" onclick="window.location.href='error.html'">Apps</button>
+      <button class="header-btn" onclick="window.location.href='error.html'">Google Drive</button>
+      <button class="header-btn" onclick="window.location.href='error.html'">More</button>
     </div>
   </header>
-  <form action="searchload.html">
+  <form action="search.html" method="get">
     <div class="search-container">
       <input type="text" name="query" placeholder="Search">
       <button type="submit">Search</button>
+      <input type="hidden" name="previousQuery" value="">
     </div>
   </form>
-
   <div class="news-container">
     <!-- Add your news articles here -->
   </div>
-  <button class="lucky-button">I'm Feeling Lucky</button>
+  <button class="lucky-button"onclick="window.location.href='error.html'">I'm Feeling Lucky</button>
+  
 </body>
 </html>
